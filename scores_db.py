@@ -18,7 +18,7 @@ class ScoresDB:
         print(self.cur.fetchall())
 
 
-    def init_db(self): #TODO make EDITION refer to editions table (& OPERA to operas table)      
+    def init_db(self):    
         self.cur.execute("""CREATE TABLE IF NOT EXISTS operas (id INTEGER PRIMARY KEY, opera TEXT)""")
 
         self.cur.execute("""CREATE TABLE IF NOT EXISTS score_types (id INTEGER PRIMARY KEY, type TEXT)""")
